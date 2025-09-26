@@ -3,7 +3,7 @@ import "./index.css";
 
 const testimonials = [
   {
-    img: "https://i.imgur.com/6Xy0QfM.png", 
+    img: "https://i.imgur.com/6Xy0QfM.png",
     user: "@foodlover_jane",
     text: "Absolutely loved the chicken wings recipe! So easy and delicious. 😍🍗"
   },
@@ -13,7 +13,7 @@ const testimonials = [
     text: "The vegan lunch bowl was a hit at my dinner party. Thanks Foodieland! 🥗🌱"
   },
   {
-    img: "https://i.imgur.com/1Q9Z1Zm.png", 
+    img: "https://i.imgur.com/1Q9Z1Zm.png",
     user: "@sweettooth_amy",
     text: "Desserts from Foodieland are always a treat. The chocolate cake was divine! 🍫🎂"
   }
@@ -127,8 +127,8 @@ function Category({ img, label }) {
 
 function RecipeCard({ img, title, desc, time, category, icon, likes, liked, onLikeToggle }) {
   return (
-    <div className="recipe-card" style={{ position: "relative" }}>
-      <div className="recipe-img-container" style={{ position: "relative" }}>
+    <div className="recipe-card">
+      <div className="recipe-img-container">
         <img src={img} alt={title} />
         <button
           className={`like-btn-img${liked ? " liked" : ""}`}
@@ -162,7 +162,6 @@ function RecipeCard({ img, title, desc, time, category, icon, likes, liked, onLi
 }
 
 function HomePage() {
-  
   const [likes, setLikes] = useState(Array(simpleTastyRecipes.length).fill(18));
   const [liked, setLiked] = useState(Array(simpleTastyRecipes.length).fill(false));
 
@@ -203,8 +202,9 @@ function HomePage() {
         </div>
       </header>
 
-      <section className="delicious-section">
-        <div>
+      {/* Hero Section */}
+      <section className="delicious-section" style={{alignItems: "flex-start"}}>
+        <div style={{textAlign: "left", width: "100%", maxWidth: 500}}>
           <h2>Spicy delicious chicken wings</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus.</p>
           <div style={{ margin: "12px 0" }}>
@@ -219,17 +219,47 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Categories */}
       <section className="categories-section">
-        <h3 style={{ marginLeft: 24 }}>Categories</h3>
-        <div className="categories-list">
+        <h3 style={{ marginLeft: 24, textAlign: "center" }}>Categories</h3>
+        <div className="categories-list" style={{justifyContent: "center"}}>
           {["Breakfast", "Vegan", "Meat", "Dessert", "Lunch", "Chocolate"].map((cat, idx) => (
             <Category key={cat} img={catImages[idx]} label={cat} />
           ))}
         </div>
       </section>
 
+      {/* Simple and tasty recipes */}
       <section>
         <h3 style={{ marginLeft: 24 }}>Simple and tasty recipes</h3>
+        {/* Healthy food reminder section */}
+        <div style={{
+          background: "#e8f3f7",
+          borderRadius: 16,
+          margin: "18px 5vw",
+          padding: "18px 18px 12px 18px",
+          display: "flex",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: 18,
+          justifyContent: "center"
+        }}>
+          <div style={{fontWeight: 600, fontSize: 18, flex: "1 1 180px", minWidth: 160}}>
+            Don't forget to eat healthy food!
+          </div>
+          <img
+            src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141359.jpg?w=740"
+            alt="Healthy Platter"
+            style={{
+              width: 120,
+              height: 80,
+              objectFit: "cover",
+              borderRadius: 12,
+              boxShadow: "0 2px 8px #eee",
+              flex: "0 0 120px"
+            }}
+          />
+        </div>
         <div className="recipe-list">
           {simpleTastyRecipes.map((recipe, idx) => (
             <RecipeCard
@@ -249,42 +279,23 @@ function HomePage() {
       </section>
 
       <section className="chef-section">
-        <h2>Everyone can be a chef in their own kitchen</h2>
-        <p>Learn essential kitchen skills, cook delicious food, and impress family and friends.</p>
+        <div className="chef-text">
+          <h2>Everyone can be a chef in their own kitchen</h2>
+          <p>Learn essential kitchen skills, cook delicious food, and impress family and friends.</p>
+          <button className="learn-more" type="button">Learn More</button>
+        </div>
         <img src={chefImg} alt="Chef" />
       </section>
 
-
-
-     
+      {/* Instagram Testimonials Section */}
       <section>
-        <h3 style={{ marginLeft: 24, marginBottom: 10 }}>Check out @foodieland on Instagram</h3>
-        <div style={{ display: "flex", gap: 24, margin: "0 24px 32px", flexWrap: "wrap" }}>
+        <div className="instagram-section">Instagram Testimonials</div>
+        <div className="instagram-testimonials-list">
           {testimonials.map((t, idx) => (
-            <div key={idx} style={{
-              background: "#fff",
-              borderRadius: 14,
-              boxShadow: "0 2px 8px #eee",
-              padding: 16,
-              width: 280,
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center"
-            }}>
-              <img
-                src={t.img}
-                alt={t.user}
-                style={{
-                  width: 220,
-                  height: 220,
-                  objectFit: "cover",
-                  borderRadius: 12,
-                  marginBottom: 12,
-                  border: "1px solid #eee"
-                }}
-              />
-              <div style={{ fontWeight: "bold", marginBottom: 6 }}>{t.user}</div>
-              <div style={{ fontSize: 15, color: "#444", textAlign: "center" }}>{t.text}</div>
+            <div className="instagram-testimonial-card" key={idx}>
+              <img src={t.img} alt={t.user} />
+              <div className="user">{t.user}</div>
+              <div className="text">{t.text}</div>
             </div>
           ))}
         </div>
@@ -352,7 +363,9 @@ function HomePage() {
             }
           ].map((item, idx) => (
             <div className="recipe-card" key={item.title}>
-              <img src={item.img} alt={item.title} />
+              <div className="recipe-img-container">
+                <img src={item.img} alt={item.title} />
+              </div>
               <h4>{item.title}</h4>
               <div style={{ display: "flex", alignItems: "center", marginTop: 8 }}>
                 <span className="meta" style={{ marginRight: 10 }}>⏱ {item.time}</span>
