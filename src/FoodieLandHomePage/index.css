@@ -19,6 +19,8 @@
 
 .foodieland-nav {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   gap: 24px;
 }
 
@@ -48,10 +50,9 @@
   margin: 30px 24px;
 }
 
-.chicken-image-container img {
-    background-image: url('https://www.flavcity.com/wp-content/uploads/2019/01/baked-chicken-wings.jpg');
+.chicken-image-container{
     height: 400px;
-    background-size: cover;
+    border-radius: 25px;
 }
 
 
@@ -183,4 +184,106 @@
   margin-top: 8px;
   display: flex;
   gap: 18px;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-section{
+    margin-left: 100px;
+}
+.copy-rights-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0 0 0;
+}
+
+.copy-rights-section p {
+  margin: 0;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.foodieland-social {
+  display: flex;
+  gap: 10px;
+}
+
+.foodieland-social img {
+  width: 22px;
+  height: 22px;
+}
+/* ...existing code... */
+
+.recipe-card {
+  border-radius: 14px;
+  background: #fff;
+  padding: 16px;
+  width: 220px;
+  margin: 8px;
+  box-shadow: 0 2px 8px #eee;
+  min-height: 220px;
+  position: relative;
+}
+
+.recipe-img-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.recipe-img-container img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+}
+
+.like-btn-img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255,255,255,0.85);
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.like-btn-img.liked {
+  background: #e74c3c;
+}
+
+.like-btn-img.liked svg {
+  fill: #fff !important;
+  stroke: #fff !important;
+}
+
+.like-count-img {
+  position: absolute;
+  top: 12px;
+  right: 42px;
+  background: rgba(255,255,255,0.85);
+  color: #e74c3c;
+  border-radius: 10px;
+  padding: 2px 7px;
+  font-size: 13px;
+  font-weight: bold;
+  min-width: 22px;
+  text-align: center;
+  box-shadow: 0 2px 8px #eee;
 }
