@@ -1,0 +1,186 @@
+
+.foodieland-root {
+  font-family: sans-serif;
+  background: #f8fbfc;
+  color: #222;
+}
+
+
+.foodieland-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.foodieland-logo {
+  font-family: 'Lucida Handwriting', cursive;
+}
+
+.foodieland-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.foodieland-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.foodieland-social {
+  display: flex;
+  gap: 10px;
+}
+
+.foodieland-social img {
+  width: 22px;
+  height: 22px;
+}
+
+
+.delicious-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e8f3f7;
+  border-radius: 24px;
+  padding: 36px;
+  margin: 30px 24px;
+}
+
+.chicken-image-container img {
+    background-image: url('https://www.flavcity.com/wp-content/uploads/2019/01/baked-chicken-wings.jpg');
+    height: 400px;
+    background-size: cover;
+}
+
+
+.categories-section {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories-list {
+  display: flex;
+  gap: 28px;
+  margin: 16px 24px;
+}
+
+
+.recipe-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 16px 24px;
+}
+
+.recipe-card {
+  border-radius: 14px;
+  background: #fff;
+  padding: 16px;
+  width: 220px;
+  margin: 8px;
+  box-shadow: 0 2px 8px #eee;
+  min-height: 220px;
+}
+
+.recipe-card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.recipe-card h4 {
+  margin: 14px 0 4px;
+}
+
+.recipe-card p {
+  font-size: 13px;
+  color: #666;
+}
+
+.recipe-card .meta {
+  font-size: 12px;
+  color: #888;
+}
+
+.chef-section {
+  background: #e8f3f7;
+  border-radius: 18px;
+  margin: 36px 24px;
+  padding: 36px;
+  text-align: center;
+}
+
+.chef-section img {
+  width: 128px;
+  border-radius: 50%;
+  margin-top: 16px;
+}
+
+.instagram-section {
+  margin-left: 24px;
+  margin-bottom: 10px;
+}
+
+.instagram-list {
+  display: flex;
+  gap: 16px;
+  margin: 0 24px 32px;
+}
+
+.instagram-list img {
+  width: 110px;
+  height: 110px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.more-recipes-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px 24px;
+}
+
+
+.newsletter-section {
+  background: #e8f3f7;
+  border-radius: 18px;
+  margin: 40px 24px 0;
+  padding: 36px;
+  text-align: center;
+}
+
+.newsletter-section input[type="email"] {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  margin-right: 8px;
+}
+
+.newsletter-section button {
+  padding: 10px 32px;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  border: none;
+}
+
+
+.foodieland-footer {
+  padding: 24px;
+  margin-top: 32px;
+  font-size: 12px;
+  color: #888;
+}
+
+.foodieland-footer nav {
+  margin-top: 8px;
+  display: flex;
+  gap: 18px;
+}
