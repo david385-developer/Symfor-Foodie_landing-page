@@ -19,36 +19,34 @@ const testimonials = [
   }
 ];
 const catImages = [
-  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=facearea&w=100&q=80", // Breakfast
-  "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2017/08/vegan-lunch-bowl-portion-1000x1500.jpg", // Vegan
-  "https://img.freepik.com/free-photo/fried-meat-served-with-grilled-vegetables-onion-rosemary-sprig_141793-742.jpg?semt=ais_hybrid&w=740&q=80", // Meat
-  "https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?auto=format&fit=facearea&w=100&q=80", // Dessert
-  "https://c.ndtvimg.com/2023-03/jkjmemsg_lunch-box-_625x300_13_March_23.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886", // Lunch
-  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=facearea&w=100&q=80", // Chocolate
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=facearea&w=100&q=80",
+  "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2017/08/vegan-lunch-bowl-portion-1000x1500.jpg",
+  "https://img.freepik.com/free-photo/fried-meat-served-with-grilled-vegetables-onion-rosemary-sprig_141793-742.jpg?semt=ais_hybrid&w=740&q=80",
+  "https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?auto=format&fit=facearea&w=100&q=80",
+  "https://c.ndtvimg.com/2023-03/jkjmemsg_lunch-box-_625x300_13_March_23.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886",
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=facearea&w=100&q=80"
 ];
 const recipeImages = [
-  "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80", // Burger
-  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80", // Salmon
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlx_kM-Ts_p37E5d0JvbAC5s9v4VO2O9_H7A&shttps://cdn-aboak.nitrocdn.com/QJsLnWfsWAiuukSIMowyVEHtotvSQZoR/assets/images/optimized/rev-ca18e1d/www.slenderkitchen.com/sites/default/files/styles/featured_1500/public/recipe_images/strawberry_banana_oat_pancakes-3.jpg", // Pancake
-  "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80", // Salad
-  "https://gethlth.com/wp-content/uploads/2024/10/Blog-Image-Chicken-Meatballs-with-Cream-Cheese-Sauce.jpg", // Meatballs
-  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80", // Fruity Pancake
-  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80", // Chicken Rice
-  "https://www.withablast.net/wp-content/uploads/2012/07/Creamy-Chicken-And-Bacon-Pasta-4.jpg", // Creamy Chicken
+  "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80",
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlx_kM-Ts_p37E5d0JvbAC5s9v4VO2O9_H7A&shttps://cdn-aboak.nitrocdn.com/QJsLnWfsWAiuukSIMowyVEHtotvSQZoR/assets/images/optimized/rev-ca18e1d/www.slenderkitchen.com/sites/default/files/styles/featured_1500/public/recipe_images/strawberry_banana_oat_pancakes-3.jpg",
+  "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
+  "https://gethlth.com/wp-content/uploads/2024/10/Blog-Image-Chicken-Meatballs-with-Cream-Cheese-Sauce.jpg",
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+  "https://www.withablast.net/wp-content/uploads/2012/07/Creamy-Chicken-And-Bacon-Pasta-4.jpg"
 ];
-const chefImg = "https://thumbs.dreamstime.com/b/chef-portrait-23088085.jpg"; // Chef
-
+const chefImg = "https://thumbs.dreamstime.com/b/chef-portrait-23088085.jpg";
 const moreRecipes = [
-  "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80", // Tropical Salad
-  "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80", // Vegan Burger
-  "https://asianinspirations.com.au/wp-content/uploads/2018/07/R00763_Salmon-Fried-Rice.jpg", // Japanese Rice
-  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80", // Vegan Taco
-  "https://www.eatthis.com/wp-content/uploads/sites/4/2020/03/honey-mustard-salad-21.jpg", // Chicken Avocado
-  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80", // Sandwich
-  "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80", // Lettuce Wrap
-  "https://theblondcook.com/wp-content/uploads/2020/10/creamy-chicken-and-mushroom-soup-featured.jpg", // Mushroom Soup
+  "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
+  "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80",
+  "https://asianinspirations.com.au/wp-content/uploads/2018/07/R00763_Salmon-Fried-Rice.jpg",
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+  "https://www.eatthis.com/wp-content/uploads/sites/4/2020/03/honey-mustard-salad-21.jpg",
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+  "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
+  "https://theblondcook.com/wp-content/uploads/2020/10/creamy-chicken-and-mushroom-soup-featured.jpg"
 ];
-
 const simpleTastyRecipes = [
   {
     title: "Big and Juicy Wagyu Beef Cheeseburger",
@@ -161,6 +159,86 @@ function RecipeCard({ img, title, desc, time, category, icon, likes, liked, onLi
   );
 }
 
+function InstagramTestimonialCard({ img, user, text }) {
+  const [liked, setLiked] = useState(false);
+  const [saved, setSaved] = useState(false);
+  const [likeCount, setLikeCount] = useState(Math.floor(Math.random() * 100) + 20);
+
+  const handleLike = () => {
+    setLiked(l => {
+      setLikeCount(c => l ? c - 1 : c + 1);
+      return !l;
+    });
+  };
+
+  const handleSave = () => setSaved(s => !s);
+
+  return (
+    <div className="instagram-testimonial-card">
+      <img src={img} alt={user} />
+      <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", margin: "8px 0 2px 0" }}>
+        <div style={{ display: "flex", gap: 12 }}>
+          <button
+            aria-label="Like"
+            style={{ background: "none", border: "none", cursor: "pointer", padding: 0 }}
+            onClick={handleLike}
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24"
+              fill={liked ? "#e74c3c" : "none"}
+              stroke="#e74c3c"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              style={{ verticalAlign: "middle" }}>
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+          <button
+            aria-label="Comment"
+            style={{ background: "none", border: "none", cursor: "pointer", padding: 0 }}
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#222" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </button>
+          <button
+            aria-label="Share"
+            style={{ background: "none", border: "none", cursor: "pointer", padding: 0 }}
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#222" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+          </button>
+        </div>
+        <button
+          aria-label="Save"
+          style={{ background: "none", border: "none", cursor: "pointer", padding: 0 }}
+          onClick={handleSave}
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24"
+            fill={saved ? "#222" : "none"}
+            stroke="#222"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            style={{ verticalAlign: "middle" }}>
+            <polygon points="19 21 12 17 5 21 5 5 19 5 19 21"></polygon>
+          </svg>
+        </button>
+      </div>
+      <div style={{ width: "100%", fontSize: 13, color: "#e74c3c", marginBottom: 2 }}>
+        {likeCount} likes
+      </div>
+      <div className="user">{user}</div>
+      <div className="text">{text}</div>
+    </div>
+  );
+}
+
 function HomePage() {
   const [likes, setLikes] = useState(Array(simpleTastyRecipes.length).fill(18));
   const [liked, setLiked] = useState(Array(simpleTastyRecipes.length).fill(false));
@@ -201,8 +279,6 @@ function HomePage() {
           </a>
         </div>
       </header>
-
-      {/* Hero Section */}
       <section className="delicious-section" style={{alignItems: "flex-start"}}>
         <div style={{textAlign: "left", width: "100%", maxWidth: 500}}>
           <h2>Spicy delicious chicken wings</h2>
@@ -218,8 +294,6 @@ function HomePage() {
           <img className="chicken-image-container" src="https://www.flavcity.com/wp-content/uploads/2019/01/baked-chicken-wings.jpg" alt="Chicken Wings" />
         </div>
       </section>
-
-      {/* Categories */}
       <section className="categories-section">
         <h3 style={{ marginLeft: 24, textAlign: "center" }}>Categories</h3>
         <div className="categories-list" style={{justifyContent: "center"}}>
@@ -228,11 +302,8 @@ function HomePage() {
           ))}
         </div>
       </section>
-
-      {/* Simple and tasty recipes */}
       <section>
         <h3 style={{ marginLeft: 24 }}>Simple and tasty recipes</h3>
-        {/* Healthy food reminder section */}
         <div style={{
           background: "#e8f3f7",
           borderRadius: 16,
@@ -277,7 +348,6 @@ function HomePage() {
           ))}
         </div>
       </section>
-
       <section className="chef-section">
         <div className="chef-text">
           <h2>Everyone can be a chef in their own kitchen</h2>
@@ -286,21 +356,14 @@ function HomePage() {
         </div>
         <img src={chefImg} alt="Chef" />
       </section>
-
-      {/* Instagram Testimonials Section */}
       <section>
         <div className="instagram-section">Instagram Testimonials</div>
         <div className="instagram-testimonials-list">
           {testimonials.map((t, idx) => (
-            <div className="instagram-testimonial-card" key={idx}>
-              <img src={t.img} alt={t.user} />
-              <div className="user">{t.user}</div>
-              <div className="text">{t.text}</div>
-            </div>
+            <InstagramTestimonialCard key={idx} img={t.img} user={t.user} text={t.text} />
           ))}
         </div>
       </section>
-
       <section>
         <h3 style={{ marginLeft: 24 }}>Try this delicious recipe to make your day</h3>
         <div className="more-recipes-list">
@@ -375,7 +438,6 @@ function HomePage() {
           ))}
         </div>
       </section>
-
       <section className="newsletter-section">
         <h2>Deliciousness to your inbox</h2>
         <p>Get weekly recipes and tips delivered straight to your inbox.</p>
@@ -387,7 +449,6 @@ function HomePage() {
           <button>Subscribe</button>
         </form>
       </section>
-
       <footer>
         <div className="footer-section">
           <div>
